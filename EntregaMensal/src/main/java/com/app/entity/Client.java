@@ -22,10 +22,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity //Marca a classe como uma entidade JPA, o que significa que ela será mapeada para uma tabela no banco de dados.
-@AllArgsConstructor //Gera um construtor com todos os argumentos necessários.
-@NoArgsConstructor //Gera um construtor sem argumentos, necessário para frameworks que requerem um construtor padrão (por exemplo, JPA).
-@Getter //Geram os métodos getters e setters automaticamente para todos os campos da classe, simplificando a manipulação dos atributos da entidade.
-@Setter
+@AllArgsConstructor 
+@NoArgsConstructor 
+@Getter 
 public class Client {
 
     @Id //Marca o campo id como a chave primária da entidade.
