@@ -21,33 +21,34 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity //Marca a classe como uma entidade JPA, o que significa que ela será mapeada para uma tabela no banco de dados.
-@AllArgsConstructor 
-@NoArgsConstructor 
-@Getter 
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Client {
 
-    @Id //Marca o campo id como a chave primária da entidade.
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //Define a estratégia de geração para o campo id, que será gerado automaticamente pelo banco de dados (geralmente um auto incremento).
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "O nome não pode ser nulo.") //Valida que o campo name não pode ser nulo ou vazio e deve conter pelo menos duas palavras.
-    @Pattern(regexp = "^(\\S+\\s+\\S+.*)$", message = "O nome deve conter pelo menos duas palavras.")
+    @NotBlank(message = "O nome não pode ser nulo ou vazio.")
+    @Pattern(regexp = "^[\\p{L} .'-]+$", message = "O nome deve conter apenas caracteres válidos.")
     private String name;
 
-    @NotNull(message = "O CPF não deve ser nulo.")
-    @CPF(message = "CPF Inválido. O formato deve ser 123.456.789.09")
+    @NotBlank(message = "O CPF não deve ser nulo ou vazio.")
+    @CPF(message = "CPF inválido. O formato deve ser 123.456.789-09.")
     private String cpf;
 
     @NotNull(message = "A idade não pode ser nula.")
     @Min(value = 0, message = "A idade não deve ser negativa.")
     private Integer age;
 
-    @NotNull(message = "O telefone não deve ser nulo.")
+    @NotBlank(message = "O telefone não deve ser nulo ou vazio.")
     @Pattern(regexp = "\\(\\d{2}\\) \\d{4,5}-\\d{4}", message = "Número de telefone inválido. O formato deve ser (XX) XXXX-XXXX ou (XX) XXXXX-XXXX.")
     private String telephone;
 
-    @OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST) //Define um relacionamento de um-para-muitos entre Client e Sale.
-    @JsonIgnoreProperties("client") //Instrui o Jackson a ignorar a propriedade client quando serializar/deserializar Sale para evitar loops infinitos no JSON.
+    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true) // Atualize o CascadeType conforme necessário
+    @JsonIgnoreProperties("client")
     private List<Sale> sales;
 }
