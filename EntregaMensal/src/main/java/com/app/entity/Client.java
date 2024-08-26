@@ -48,7 +48,7 @@ public class Client {
     @Pattern(regexp = "\\(\\d{2}\\) \\d{4,5}-\\d{4}", message = "Número de telefone inválido. O formato deve ser (XX) XXXX-XXXX ou (XX) XXXXX-XXXX.")
     private String telephone;
 
-    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true) // Atualize o CascadeType conforme necessário
+    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true) 
     @JsonIgnoreProperties("client")
     private List<Sale> sales;
 }
