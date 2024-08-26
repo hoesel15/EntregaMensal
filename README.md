@@ -20,7 +20,8 @@ Este é um projeto de faculdade para o curso de Análise e Desenvolvimento de Si
  - **Atualização de Produtos**: Atualize informações dos produtos existentes.
  - **Remoção de Produtos**: Exclua produtos da loja.
   
-  ##integrantes
-  **github.com/hoesel15.
-  **github.com/jhonatdev.
+  ## integrantes
+  
+- **github.com/hoesel15**.
+-**github.com/jhonatdev**.
 
