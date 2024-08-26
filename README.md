@@ -13,8 +13,8 @@ Este é um projeto de faculdade para o curso de Análise e Desenvolvimento de Si
 ## Funcionalidades
  - **Cadastro de funcionario**: adicione o funcionario .
  - **Cadastro de clientes**:adicione o cliente .
- - **listagem de cliente **:visualize todos os clites.
- -  **liostagem de funcionario**:vizualize todos os funcionarios.
+ - **Listagem de cliente**:visualize todos os clientes.
+ - **Listagem de funcionario**:vizualize todos os funcionarios.
  - **Cadastro de Produtos**: Adicione novos produtos à loja com informações como nome, descrição e preço.
  - **Listagem de Produtos**: Visualize todos os produtos disponíveis na loja.
  - **Atualização de Produtos**: Atualize informações dos produtos existentes.
