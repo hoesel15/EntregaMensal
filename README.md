@@ -27,5 +27,5 @@ Banco de Dados:
   ## integrantes
   
 - **github.com/hoesel15**.
--**github.com/jhonatdev**.
+- **github.com/jhonatdev**.
 
