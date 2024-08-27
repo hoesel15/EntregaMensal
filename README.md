@@ -1,7 +1,5 @@
 # Projeto de Loja de Roupas
 
-![Imagem da Loja](https://example.com/imagem-da-loja.jpg)
-
 ## Descrição
 
 Este projeto é um trabalho acadêmico do curso de Análise e Desenvolvimento de Sistemas, realizado no 4º período. Consiste em uma aplicação de loja de roupas desenvolvida utilizando Spring Boot e Java, com um banco de dados para a persistência das informações.
