@@ -5,10 +5,12 @@
 Este é um projeto de faculdade para o curso de Análise e Desenvolvimento de Sistemas, realizado no 4º período. O projeto consiste em uma aplicação de loja de roupas, desenvolvida utilizando Spring Boot e Java, com um banco de dados para persistência dos dados.
 
  ## Tecnologias Utilizadas
-
- - **Java**: Linguagem de programação principal.
- - **Spring Boot**: Framework para desenvolvimento rápido de aplicações Java.
- - **Banco de Dados**:, MySQL.
+- **Java**: Linguagem de programação principal utilizada no desenvolvimento do projeto.
+- **Spring Boot**: Framework para desenvolvimento rápido de aplicações Java, facilitando a configuração e integração de diversos componentes.
+- **JPA (Java Persistence API)**: API utilizada para a gestão de persistência de dados e mapeamento objeto-relacional, simplificando o acesso ao banco de dados.
+- **Hibernate**: Implementação do JPA usada para realizar a comunicação com o banco de dados e realizar o mapeamento entre objetos Java e tabelas do banco.
+Banco de Dados:
+- **MySQL**: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar e gerenciar os dados da aplicação.
 
 ## Funcionalidades
  - **Cadastro de funcionario**: adicione o funcionario .
