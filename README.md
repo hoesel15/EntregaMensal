@@ -19,7 +19,9 @@ Este é um projeto de faculdade para o curso de Análise e Desenvolvimento de Si
  - **Listagem de Produtos**: Visualize todos os produtos disponíveis na loja.
  - **Atualização de Produtos**: Atualize informações dos produtos existentes.
  - **Remoção de Produtos**: Exclua produtos da loja.
-  
+ - **Realizar venda**: Realiza a venda de produtos cadastrados.
+ - **Listar vedas**: Mostra as vendas realizadas.
+ - **Excluir vendas**: Exclui a venda listada.  
   ## integrantes
   
 - **github.com/hoesel15**.
